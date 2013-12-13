@@ -4,7 +4,6 @@ set nocompatible
 " pathogen
 call pathogen#infect()
 
-"""""""""""""""""
 "general settings
 
 syntax on
