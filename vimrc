@@ -190,13 +190,13 @@ map <leader>gl :Glog<cr>
 map <leader>gd :Gdiff<cr>
 
 " surround plugin
-autocmd FileType php let b:surround_45 = "<?php \r ?>"
+:silent autocmd FileType php let b:surround_45 = "<?php \r ?>"
 
 """""""""""""""
 " filetype specific
 
 " remove trailing whitespace
-autocmd FileType c,cpp,python,ruby,java,html,twig,css,scss,json,javascript
-autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
+:silent autocmd FileType c,cpp,python,ruby,java,html,twig,css,scss,json,javascript
+:silent autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
 
 
